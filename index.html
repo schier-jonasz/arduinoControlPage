@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarControl</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="header__heading">Control Car</h1>
+        <p class="header__paragraph">Have fun</p>
+    </header>
+    <main class="main">
+        <section class="buttons">
+            <button onmousedown="holdUp()" onmouseup="releasedFunction()" class="buttons__button buttons__up"><img src="https://image.flaticon.com/icons/png/512/875/875617.png" class="buttons__image up"></button>
+            <button onmousedown="holdLeft()" onmouseup="releasedFunction()" class="buttons__button buttons__left"><img src="https://image.flaticon.com/icons/png/512/875/875617.png" class="buttons__image left"></button>
+            <button onmousedown="holdRight()" onmouseup="releasedFunction()" class="buttons__button buttons__right"><img src="https://image.flaticon.com/icons/png/512/875/875617.png" class="buttons__image right"></button>
+            <button onmousedown="holdDown()" onmouseup="releasedFunction()" class="buttons__button buttons__down"><img src="https://image.flaticon.com/icons/png/512/875/875617.png" class="buttons__image down"></button>
+        </section>
+        <div class="form">
+            <input type="text" name="ip" class="form__ip" placeholder="Enter here your IP">
+            <button onclick="getIp()" class="form__button">SET IP</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
