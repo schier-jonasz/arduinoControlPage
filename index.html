@@ -10,6 +10,7 @@
     <header class="header">
         <h1 class="header__heading">Control Car</h1>
         <p class="header__paragraph">Have fun</p>
+        <p class="header__ip">Your IP: 0.0.0.0</p>
     </header>
     <main class="main">
         <section class="buttons">
@@ -19,7 +20,7 @@
             <button onmousedown="holdDown()" onmouseup="releasedFunction()" class="buttons__button buttons__down"><img src="https://image.flaticon.com/icons/png/512/875/875617.png" class="buttons__image down"></button>
         </section>
         <div class="form">
-            <input type="text" name="ip" class="form__ip" placeholder="Enter here your IP">
+            <input type="text" name="ip" class="form__ip" placeholder="Enter here your IP" pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$">
             <button onclick="getIp()" class="form__button">SET IP</button>
         </div>
     </main>
